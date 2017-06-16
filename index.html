@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <div id="2d-wrap">
+    <nav class="col-1-1">
+      <h1>LOGO</h1>
+    </nav>
+    <section class="wrap center-text">
+      <h1>TO START YOUR WORLD, DROP AN IMAGE BELOW</h1>
+      <button onclick="switchTo3D()">TEST</button>
+    </section>
+    <section>
+      <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+    </section>
+  </div>
+
+  <div id="3d-wrap">
+    <button onclick="switchTo2D()">TEST</button>
+    <a-scene>
+        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>      
+    </a-scene>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/dropzone.js"></script>
+  <script>
+    function switchTo3D() {
+      document.getElementById("2d-wrap").style.display = "none";
+      document.getElementById("3d-wrap").style.display = "block";
+    }
+
+    function switchTo2D() {
+      document.getElementById("3d-wrap").style.display = "none";
+      document.getElementById("2d-wrap").style.display = "block";
+    }
+  </script>
+  </body>
+</html>
