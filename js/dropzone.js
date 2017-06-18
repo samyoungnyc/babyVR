@@ -2050,9 +2050,3 @@
   contentLoaded(window, Dropzone._autoDiscoverFunction);
 
 }).call(this);
-// CUSTOM DROPZONE BEHAVIORS
-Dropzone.options.myAwesomeDropzone = {
-  init: function() {
-    this.on("addedfile", function(file) { alert("Added file."); });
-  }
-};
