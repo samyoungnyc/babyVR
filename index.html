@@ -9,28 +9,44 @@
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
-  <div id="2d-wrap">
+  <div id="flatland-wrap">
     <nav class="col-1-1">
       <h1>LOGO</h1>
     </nav>
     <section class="wrap center-text">
-      <h1>TO START YOUR WORLD, DROP AN IMAGE BELOW</h1>
-      <button onclick="switchTo3D()">TEST</button>
+      <header>
+        <h1>TO START YOUR WORLD, CHOOSE A SCENE...</h1>
+      </header>
+      <article id="choose-a-scene">
+        <div class="image"></div>
+        <div class="image"></div>
+        <div class="image"></div>
+        <!--<img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">-->
+      </article>
+      <header>
+        <h1>OR DROP YOUR OWN PIC BELOW...</h1>
+      </header>
+      <article id="a-scene-upload">
+        <form action="/file-upload" class="dropzone" id="a-scene-upload-form"></form>  
+      </article>      
+      <!--<button onclick="switchTo3D()">TEST</button>-->
     </section>
-    <section>
-      <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
-    </section>
+      
   </div>
 
-  <div id="3d-wrap">
+  
+
+  <section id="a-frame-wrap">
     <aside style="display: inline-block;">
-    <button onclick="switchTo2D()" id="">BACK TO FLATLAND</button>
+    <button onclick="switchToflatland()" id="">BACK TO FLATLAND</button>
     <button onclick="addBoxToScene()" id="">MAKE A BOX</button>
     </aside>
     <a-scene id="scene">
         <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
     </a-scene>
-  </div>  
+  </section>  
   <script src="js/dropzone.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <script src="js/app.js"></script>

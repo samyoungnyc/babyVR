@@ -29,13 +29,13 @@ function firebaseConfig() {
 }
 //
 function switchTo3D() {
-  document.getElementById("2d-wrap").style.display = "none";
-  document.getElementById("3d-wrap").style.display = "block";
+  document.getElementById("flatland-wrap").style.display = "none";
+  document.getElementById("a-frame-wrap").style.display = "block";
 }
 
-function switchTo2D() {
-  document.getElementById("3d-wrap").style.display = "none";
-  document.getElementById("2d-wrap").style.display = "block";
+function switchToflatland() {
+  document.getElementById("a-frame-wrap").style.display = "none";
+  document.getElementById("flatland-wrap").style.display = "block";
 }
 
 function addBoxToScene(box) {
@@ -46,7 +46,7 @@ function addBoxToScene(box) {
   scene.appendChild(box);
 }
 // CUSTOM DROPZONE BEHAVIORS
-Dropzone.options.myAwesomeDropzone = {
+Dropzone.options.aSceneUpload = {
   init: function() {
     this.on("addedfile", function(file) { 
       alert("Added file.");
