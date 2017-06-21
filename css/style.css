@@ -68,21 +68,34 @@ nav h1 {
   text-align: center;
 }
 
+header {
+	margin-top: 20px;
+}
+
 #choose-a-scene {
 	display: flex;
 	justify-content: center;
+	margin-top: 20px;
 }
 
-.image {	
+#choose-a-scene img {	
+	width: 307px;
+	height: 154px;
+	flex: 1;
+	margin-right: 20px;	
+}
+
+/*.image {	
 	width: 307px;
 	height: 154px;
 	background-color: green;
-	margin-right: 10px;
-}
+	margin-right: 10px;	
+}*/
 
 #a-scene-upload {
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	margin-top: 20px;
 }
 
 #a-scene-upload-form {

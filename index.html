@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <script src="https://unpkg.com/vue"></script>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
@@ -15,12 +16,15 @@
     </nav>
     <section class="wrap center-text">
       <header>
-        <h1>TO START YOUR WORLD, CHOOSE A SCENE...</h1>
+        <h1 class="animated fadeInDownBig">TO START YOUR WORLD, CHOOSE A SCENE...</h1>
       </header>
-      <article id="choose-a-scene">
-        <div class="image"></div>
-        <div class="image"></div>
-        <div class="image"></div>
+      <article id="choose-a-scene">        
+        <img src="central-park.jpg" alt="Central Park" class="animated pulse infinite">
+        <img src="aurora-360.jpg" alt="Aurora" class="animated pulse infinite">
+        <img src="space-360.jpg" alt="Space" class="animated pulse infinite">
+        <!--<div class="image"></div>-->
+        <!--<div class="image"></div>-->
+        <!--<div class="image"></div>-->
         <!--<img src="" alt="">
         <img src="" alt="">
         <img src="" alt="">-->
@@ -28,7 +32,7 @@
       <header>
         <h1>OR DROP YOUR OWN PIC BELOW...</h1>
       </header>
-      <article id="a-scene-upload">
+      <article id="a-scene-upload" class="animated fadeInUpBig">
         <form action="/file-upload" class="dropzone" id="a-scene-upload-form"></form>  
       </article>      
       <!--<button onclick="switchTo3D()">TEST</button>-->
