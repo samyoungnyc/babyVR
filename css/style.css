@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: white;
 }
 ol, ul {
 	list-style: none;
@@ -52,11 +53,18 @@ table {
 }
 
 nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
   height: 100px;
 }
 
 nav h1 {
-  color: red;  
+	margin-top: 10px;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 5em;
+	margin-left: 20px;
+	z-index: 1;
 }
 
 .wrap {
@@ -70,12 +78,24 @@ nav h1 {
 
 header {
 	margin-top: 20px;
+	z-index: -1;
+}
+
+header h1 {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 2.2em;
+	font-weight: 300;
+	color: black;
+}
+
+#top-section {
+	margin-top: 75px;
 }
 
 #choose-a-scene {
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
+	margin-top: 80px;
 }
 
 #choose-a-scene img {	
@@ -83,29 +103,25 @@ header {
 	height: 154px;
 	flex: 1;
 	margin-right: 20px;	
+	border-radius: 3px;
 }
 
-/*.image {	
-	width: 307px;
-	height: 154px;
-	background-color: green;
-	margin-right: 10px;	
-}*/
+#bottom-section {
+	margin-top: 80px;
+}
 
-#a-scene-upload {
+#make-a-scene {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
 }
 
-#a-scene-upload-form {
-
+#make-a-scene-upload-form {
+	margin-top: 25px;
   height: 300px;
   width: 500px;
-	background-color: blue;
 }
 
 #a-frame-wrap {
   display: none;
 }
-

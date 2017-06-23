@@ -8,49 +8,33 @@
     <link href="css/animate.css" rel="stylesheet">
     <script src="https://unpkg.com/vue"></script>
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300" rel="stylesheet">
   </head>
   <body>
   <div id="flatland-wrap">
     <nav class="col-1-1">
-      <h1>LOGO</h1>
+      <h1 class="rainbow-text">👶🏼VR</h1>
     </nav>
-    <section class="wrap center-text">
+    <section class="wrap center-text" id="top-section">
       <header>
-        <h1 class="animated fadeInDownBig">TO START YOUR WORLD, CHOOSE A SCENE...</h1>
+        <h1 class="animated fadeInDownBig">to start your 🌍 choose a scene...</h1>
       </header>
-      <article id="choose-a-scene">        
+      <article id="choose-a-scene">
         <img src="central-park.jpg" alt="Central Park" class="animated pulse infinite">
         <img src="aurora-360.jpg" alt="Aurora" class="animated pulse infinite">
         <img src="space-360.jpg" alt="Space" class="animated pulse infinite">
-        <!--<div class="image"></div>-->
-        <!--<div class="image"></div>-->
-        <!--<div class="image"></div>-->
-        <!--<img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">-->
       </article>
+    </section>
+    <section class="wrap center-text" id="bottom-section">
       <header>
-        <h1>OR DROP YOUR OWN PIC BELOW...</h1>
+        <h1 class="animated fadeInUpBig">📸 or make 👇🏾 your own 🖼</h1>
       </header>
-      <article id="a-scene-upload" class="animated fadeInUpBig">
-        <form action="/file-upload" class="dropzone" id="a-scene-upload-form"></form>  
+      <article id="make-a-scene" class="animated fadeInUpBig">
+        <form action="/file-upload" class="dropzone rainbow-border" id="make-a-scene-upload-form"><h1>🎯</h1></form>  
       </article>      
       <!--<button onclick="switchTo3D()">TEST</button>-->
     </section>
-      
   </div>
-
-  
-
-  <section id="a-frame-wrap">
-    <aside style="display: inline-block;">
-    <button onclick="switchToflatland()" id="">BACK TO FLATLAND</button>
-    <button onclick="addBoxToScene()" id="">MAKE A BOX</button>
-    </aside>
-    <a-scene id="scene">
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-    </a-scene>
-  </section>  
   <script src="js/dropzone.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
   <script src="js/app.js"></script>
