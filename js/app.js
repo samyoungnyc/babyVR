@@ -46,11 +46,11 @@ function addBoxToScene(box) {
   scene.appendChild(box);
 }
 // CUSTOM DROPZONE BEHAVIORS
-Dropzone.options.aSceneUpload = {
+Dropzone.options.makeASceneUploadForm = {
   init: function() {
     this.on("addedfile", function(file) { 
+      document.getElementById("target-emoji").style.display = "none";
       alert("Added file.");
-      
     });
   }
 };

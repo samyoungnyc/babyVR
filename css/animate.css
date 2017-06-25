@@ -122,6 +122,11 @@
   -webkit-animation: rainbow-border 5s infinite alternate;
 }
 
+.rainbow-border-upload {
+  border: 2px dashed hsl(0, 100%, 50%);
+  -webkit-animation: rainbow-border 5s infinite alternate;
+}
+
 @-webkit-keyframes rainbow-text {
   0% {color: #ee0000}
 	50% {color: yellow}

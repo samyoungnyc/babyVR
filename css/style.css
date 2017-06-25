@@ -114,6 +114,7 @@ header h1 {
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 #make-a-scene-upload-form {
@@ -122,6 +123,13 @@ header h1 {
   width: 500px;
 }
 
+#make-a-scene-upload-form h1 {
+	font-size: 5em;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	
+}
 #a-frame-wrap {
   display: none;
 }
