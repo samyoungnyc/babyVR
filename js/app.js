@@ -47,10 +47,30 @@ function addBoxToScene(box) {
 }
 // CUSTOM DROPZONE BEHAVIORS
 Dropzone.options.makeASceneUploadForm = {
-  init: function() {
+  init: function() {     
     this.on("addedfile", function(file) { 
-      document.getElementById("target-emoji").style.display = "none";
-      alert("Added file.");
+      document.getElementById("target-emoji").style.display = "none";      
+      // document.getElementsByClassName('dz-details dz-error-message dz-error-mark dz-success-mark').style.display = "none";
     });
   }
+};
+
+Dropzone.options.makeASceneUploadForm = {
+  paramName: "file", // The name that will be used to transfer the file
+  maxFilesize: 2.5, // MB
+    init: function() {     
+        this.on("addedfile", function(file) { 
+          document.getElementById("target-emoji").style.display = "none";
+          console.log("added image")
+          // document.getElementsByClassName('dz-details dz-error-message dz-error-mark dz-success-mark').style.display = "none";
+        });
+      }
+
+  // accept: function(file, done) {
+  //   if (file.name == "justinbieber.jpg") {
+  //     console.log("JBEBB");
+  //     done("Naha, you don't.");
+  //   }
+  //   else { done(); }
+  // }
 };
