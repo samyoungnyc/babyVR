@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>BabyVR - Central Park</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
+    <a-scene>
+      <a-assets>
+      <img id="sceneTexture" src="../central-park.jpg">
+      </a-assets>
+      <a-sky src="#sceneTexture"></a-sky>
+    </a-scene>  
   
   </body>
 </html>
